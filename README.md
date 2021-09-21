@@ -1,12 +1,26 @@
 # Belf-front
 
-## Project Setup
+## 프로젝트 세팅
 
 ```bash
 $ npx create-next-app belf-front --ts
 ```
 
-## Commit Rules
+## 폴더 구조
+
+```text
+./
+├── components
+├── hooks
+├── libs
+├── node_modules
+├── pages
+├── public
+├── states
+└── types
+```
+
+## 커밋 규칙
 
 | Type     | Description                                                            |
 | -------- | ---------------------------------------------------------------------- |
