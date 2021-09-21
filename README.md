@@ -68,6 +68,12 @@ export default class MyDocument extends Document {
 }
 ```
 
+### SVG 간편 사용을 위한 webpack 설치
+
+```bash
+$ npm i -d @svgr/webpack
+```
+
 ## 폴더 구조
 
 ```text
