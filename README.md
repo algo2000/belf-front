@@ -14,6 +14,23 @@ $ npm i -D @types/styled-components
 $ npm i -D babel-plugin-styled-components
 ```
 
+### styled-components babel 설정
+
+```json
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true
+      }
+    ]
+  ]
+}
+```
+
 ## 폴더 구조
 
 ```text
