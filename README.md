@@ -3,7 +3,15 @@
 ## 프로젝트 세팅
 
 ```bash
+// 프로젝트 셍성
 $ npx create-next-app belf-front --ts
+
+// stlyed-components typescript 패키지 설치
+$ npm i styled-components
+$ npm i -D @types/styled-components
+
+// styled-components ssr 사용을 위한 세팅
+$ npm i -D babel-plugin-styled-components
 ```
 
 ## 폴더 구조
