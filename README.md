@@ -17,6 +17,7 @@ $ npm i -D babel-plugin-styled-components
 ### styled-components babel 설정
 
 ```json
+// ./.babel
 {
   "presets": ["next/babel"],
   "plugins": [
@@ -28,6 +29,42 @@ $ npm i -D babel-plugin-styled-components
       }
     ]
   ]
+}
+```
+
+### styled-components SSR을 위한 \_documents.tsx 생성
+
+```ts
+// ./pages/_documents.tsx
+import Document, { DocumentContext } from "next/document";
+import { ServerStyleSheet } from "styled-components";
+
+export default class MyDocument extends Document {
+  static async getInitialProps(ctx: DocumentContext) {
+    const sheet = new ServerStyleSheet();
+    const originalRenderPage = ctx.renderPage;
+
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        });
+
+      const initialProps = await Document.getInitialProps(ctx);
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+      };
+    } finally {
+      sheet.seal();
+    }
+  }
 }
 ```
 
