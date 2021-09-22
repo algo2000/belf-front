@@ -1,3 +1,5 @@
+import { DefaultTheme } from "styled-components";
+
 const fontColor = {
   main: "Black",
   sub: "#96959A",
@@ -21,7 +23,7 @@ const lineColor = {
   main: "#2A2C2D",
 };
 
-export const lightTheme = {
+export const lightTheme: DefaultTheme = {
   fontColor,
   brandColor,
   activateColor,
