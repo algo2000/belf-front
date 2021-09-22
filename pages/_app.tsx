@@ -2,7 +2,7 @@ import React from "react";
 import type { AppProps } from "next/app";
 import { RecoilRoot } from "recoil";
 
-import ThemeState from "../theme/themeState";
+import ThemeState from "../theme/ThemeState";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
