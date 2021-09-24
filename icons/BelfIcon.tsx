@@ -1,6 +1,6 @@
 import React from "react";
 
-import Icon from "./assets/Belf.svg";
+import Icon from "./svg/Belf.svg";
 
 import SvgIcon from "./SvgIcon";
 
