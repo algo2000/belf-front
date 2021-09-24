@@ -9,7 +9,7 @@ const ButtonStyle = styled.button`
   color: ${({ theme }) => theme.fontColor.main};
 `;
 
-export default function TestButton() {
+export default function ThemeChangeButton() {
   const [theme, setTheme] = useRecoilState(themeState);
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
