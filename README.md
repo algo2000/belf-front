@@ -80,11 +80,13 @@ $ npm i -d @svgr/webpack
 ./
 ├── components
 ├── hooks
+├── icons
 ├── libs
 ├── node_modules
 ├── pages
 ├── public
 ├── states
+├── theme
 └── types
 ```
 
