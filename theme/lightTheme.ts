@@ -1,7 +1,9 @@
 import { DefaultTheme } from "styled-components";
 
+import common from "./common";
+
 const fontColor = {
-  main: "Black",
+  main: "#131313",
   sub: "#96959A",
   sub2: "#58595B",
 };
@@ -15,12 +17,12 @@ const activateColor = {
 };
 
 const backgroundColor = {
-  bg: "#131313",
-  card: "#1B1C1E",
+  bg: "#FBFDFE",
+  card: "#f2f2f2",
 };
 
 const lineColor = {
-  main: "#2A2C2D",
+  main: "#ebebeb",
 };
 
 export const lightTheme: DefaultTheme = {
@@ -29,5 +31,6 @@ export const lightTheme: DefaultTheme = {
   activateColor,
   backgroundColor,
   lineColor,
+  common,
 };
 export default lightTheme;

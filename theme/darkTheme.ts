@@ -1,5 +1,7 @@
 import { DefaultTheme } from "styled-components";
 
+import common from "./common";
+
 const fontColor = {
   main: "#FBFDFE",
   sub: "#96959A",
@@ -29,5 +31,6 @@ export const darkTheme: DefaultTheme = {
   activateColor,
   backgroundColor,
   lineColor,
+  common,
 };
 export default darkTheme;
