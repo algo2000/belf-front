@@ -4,19 +4,20 @@ import styled from "styled-components";
 
 import BelfIcon from "../../icons/BelfIcon";
 
-const Logo = styled.div`
+export const Logo = styled.div`
   display: inline-block;
   height: 30px;
   line-height: 30px;
-
   cursor: pointer;
+  * {
+    float: left;
+  }
 `;
 
 const LogoText = styled.a`
   font-size: ${({ theme }) => theme.common.fontSize.s600}px;
   font-weight: ${({ theme }) => theme.common.fontWeight.bold};
   margin-left: 6px;
-  vertical-align: super;
 `;
 
 export default function BelfLogo() {
