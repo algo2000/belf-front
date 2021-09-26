@@ -7,6 +7,11 @@ import { themeState } from "../../../states/themeState";
 const ButtonStyle = styled.button`
   background-color: ${({ theme }) => theme.brandColor.main};
   color: ${({ theme }) => theme.fontColor.main};
+  float: right;
+
+  height: 30px;
+  width: 60px;
+  border-radius: ${({ theme }) => theme.common.borderRadius.default}px;
 `;
 
 export default function ThemeChangeButton() {
