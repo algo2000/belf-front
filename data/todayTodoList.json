@@ -1,0 +1,40 @@
+{
+  "todo_list": [
+    {
+      "id": 1,
+      "recurringCycleDate": null,
+      "title": "test",
+      "explanation": "test",
+      "passedDay": 1,
+      "addDate": "2021-06-18T04:16:34.535Z",
+      "courseId": {
+        "id": 56,
+        "startDate": null,
+        "endDate": null,
+        "explanation": "tasedfsdaf",
+        "title": "testase",
+        "likeCount": 0,
+        "color": { "id": "#84FFF6" },
+        "creatorId": null
+      }
+    },
+    {
+      "id": 2,
+      "recurringCycleDate": null,
+      "title": "ㅅㄷㅁㄴㅅ",
+      "explanation": "ㅅㅁㄴㄷㅅㅁㄷㄴ",
+      "passedDay": 1,
+      "addDate": "2021-06-18T04:17:28.178Z",
+      "courseId": {
+        "id": 56,
+        "startDate": null,
+        "endDate": null,
+        "explanation": "tasedfsdaf",
+        "title": "testase",
+        "likeCount": 0,
+        "color": { "id": "#84FFF6" },
+        "creatorId": null
+      }
+    }
+  ]
+}

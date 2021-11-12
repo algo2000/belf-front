@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-server
+  namespace: test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: front-server
+  template:
+    metadata:
+      labels:
+        app: front-server
+    spec:
+      containers:
+        - name: front-server
+          image: ghcr.io/belf-kr/front-server/nextjs
+          imagePullPolicy: "Always"
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              cpu: 100m
+              memory: 50Mi
+            limits:
+              cpu: 100m
+              memory: 100Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: front-server
+  namespace: test
+spec:
+  type: ClusterIP
+  ports:
+    - port: 3000
+  selector:
+    app: front-server

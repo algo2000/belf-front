@@ -1,0 +1,26 @@
+{
+  "course_list": [
+    {
+      "originalCourseId": null,
+      "color": "#8D84FB",
+      "creatorId": null,
+      "startDate": null,
+      "endDate": null,
+      "explanation": "asdvasdv",
+      "title": "ab",
+      "likeCount": 0,
+      "tags": []
+    },
+    {
+      "originalCourseId": null,
+      "color": "#D9FF84",
+      "creatorId": null,
+      "startDate": null,
+      "endDate": null,
+      "explanation": "김재광 바부",
+      "title": "김재광 바부",
+      "likeCount": 0,
+      "tags": []
+    }
+  ]
+}
